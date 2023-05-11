@@ -1,0 +1,7 @@
+databaseChangeLog:
+  - changeSet:
+      id: changelog-create-visits-table
+      author: maciej.badziak
+      changes:
+        sqlFile:
+          path: db.changelog/setup-scripts/changelog-create-visits-table.sql
