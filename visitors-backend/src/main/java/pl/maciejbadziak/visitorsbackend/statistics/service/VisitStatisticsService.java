@@ -1,7 +1,7 @@
-package pl.maciejbadziak.visitorsbackend.visit.service;
+package pl.maciejbadziak.visitorsbackend.statistics.service;
 
 import org.springframework.stereotype.Service;
-import pl.maciejbadziak.visitorsbackend.visit.domain.DailyVisitStatistics;
+import pl.maciejbadziak.visitorsbackend.statistics.domain.DailyVisitStatistics;
 import pl.maciejbadziak.visitorsbackend.visit.domain.Visit;
 
 import java.util.List;

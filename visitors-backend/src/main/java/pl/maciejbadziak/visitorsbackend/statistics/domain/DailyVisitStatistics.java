@@ -1,4 +1,4 @@
-package pl.maciejbadziak.visitorsbackend.visit.domain;
+package pl.maciejbadziak.visitorsbackend.statistics.domain;
 
 import lombok.AccessLevel;
 import lombok.AllArgsConstructor;

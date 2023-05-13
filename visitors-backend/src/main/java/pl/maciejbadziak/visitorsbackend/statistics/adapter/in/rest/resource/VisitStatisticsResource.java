@@ -1,4 +1,4 @@
-package pl.maciejbadziak.visitorsbackend.visit.adapter.in.rest.resources;
+package pl.maciejbadziak.visitorsbackend.statistics.adapter.in.rest.resource;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import jakarta.validation.constraints.NotNull;

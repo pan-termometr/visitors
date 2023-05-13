@@ -1,11 +1,11 @@
-package pl.maciejbadziak.visitorsbackend.visit.usecase;
+package pl.maciejbadziak.visitorsbackend.statistics.usecase;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Component;
 import pl.maciejbadziak.visitorsbackend.visit.domain.Visit;
-import pl.maciejbadziak.visitorsbackend.visit.domain.DailyVisitStatistics;
+import pl.maciejbadziak.visitorsbackend.statistics.domain.DailyVisitStatistics;
 import pl.maciejbadziak.visitorsbackend.visit.port.RetrieveAllVisitsPort;
-import pl.maciejbadziak.visitorsbackend.visit.service.VisitStatisticsService;
+import pl.maciejbadziak.visitorsbackend.statistics.service.VisitStatisticsService;
 
 import java.util.List;
 

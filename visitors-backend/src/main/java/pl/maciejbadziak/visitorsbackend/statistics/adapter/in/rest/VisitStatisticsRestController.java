@@ -1,9 +1,9 @@
-package pl.maciejbadziak.visitorsbackend.visit.adapter.in.rest;
+package pl.maciejbadziak.visitorsbackend.statistics.adapter.in.rest;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
-import pl.maciejbadziak.visitorsbackend.visit.adapter.in.rest.resources.VisitStatisticsResource;
-import pl.maciejbadziak.visitorsbackend.visit.usecase.RetrieveVisitStatisticsUseCase;
+import pl.maciejbadziak.visitorsbackend.statistics.adapter.in.rest.resource.VisitStatisticsResource;
+import pl.maciejbadziak.visitorsbackend.statistics.usecase.RetrieveVisitStatisticsUseCase;
 
 import java.util.List;
 

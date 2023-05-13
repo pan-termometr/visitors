@@ -1,8 +1,8 @@
-package pl.maciejbadziak.visitorsbackend.visit.adapter.in.rest;
+package pl.maciejbadziak.visitorsbackend.statistics.adapter.in.rest;
 
 import org.springframework.stereotype.Component;
-import pl.maciejbadziak.visitorsbackend.visit.adapter.in.rest.resources.VisitStatisticsResource;
-import pl.maciejbadziak.visitorsbackend.visit.domain.DailyVisitStatistics;
+import pl.maciejbadziak.visitorsbackend.statistics.adapter.in.rest.resource.VisitStatisticsResource;
+import pl.maciejbadziak.visitorsbackend.statistics.domain.DailyVisitStatistics;
 
 import java.util.Collections;
 import java.util.List;
