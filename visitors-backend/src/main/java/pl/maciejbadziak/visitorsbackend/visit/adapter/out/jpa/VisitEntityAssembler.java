@@ -1,7 +1,7 @@
-package pl.maciejbadziak.visitorsbackend.visitarchive.adapter.out.jpa;
+package pl.maciejbadziak.visitorsbackend.visit.adapter.out.jpa;
 
 import org.springframework.stereotype.Component;
-import pl.maciejbadziak.visitorsbackend.visitarchive.domain.Visit;
+import pl.maciejbadziak.visitorsbackend.visit.domain.Visit;
 
 @Component
 public class VisitEntityAssembler {

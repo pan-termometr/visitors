@@ -1,4 +1,4 @@
-package pl.maciejbadziak.visitorsbackend.visitarchive.domain.exception;
+package pl.maciejbadziak.visitorsbackend.visit.domain.exception;
 
 import java.io.Serial;
 

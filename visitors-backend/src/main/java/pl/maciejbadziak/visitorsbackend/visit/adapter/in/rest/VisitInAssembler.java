@@ -1,9 +1,9 @@
-package pl.maciejbadziak.visitorsbackend.visitarchive.adapter.in.rest;
+package pl.maciejbadziak.visitorsbackend.visit.adapter.in.rest;
 
 import org.springframework.stereotype.Component;
-import pl.maciejbadziak.visitorsbackend.visitarchive.adapter.in.rest.resources.VisitResource;
-import pl.maciejbadziak.visitorsbackend.visitarchive.domain.Ip;
-import pl.maciejbadziak.visitorsbackend.visitarchive.domain.Visit;
+import pl.maciejbadziak.visitorsbackend.visit.adapter.in.rest.resources.VisitResource;
+import pl.maciejbadziak.visitorsbackend.visit.domain.Ip;
+import pl.maciejbadziak.visitorsbackend.visit.domain.Visit;
 
 @Component
 public class VisitInAssembler {

@@ -1,9 +1,9 @@
-package pl.maciejbadziak.visitorsbackend.visitarchive.domain;
+package pl.maciejbadziak.visitorsbackend.visit.domain;
 
 import lombok.AccessLevel;
 import lombok.AllArgsConstructor;
 import lombok.Value;
-import pl.maciejbadziak.visitorsbackend.visitarchive.domain.exception.InvalidIpException;
+import pl.maciejbadziak.visitorsbackend.visit.domain.exception.InvalidIpException;
 
 import java.util.regex.Pattern;
 

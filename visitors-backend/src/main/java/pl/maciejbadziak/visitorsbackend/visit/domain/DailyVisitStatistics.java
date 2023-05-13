@@ -1,4 +1,4 @@
-package pl.maciejbadziak.visitorsbackend.visitarchive.domain;
+package pl.maciejbadziak.visitorsbackend.visit.domain;
 
 import lombok.AccessLevel;
 import lombok.AllArgsConstructor;
@@ -10,8 +10,9 @@ import java.time.LocalDate;
 @Value
 @Builder
 @AllArgsConstructor(access = AccessLevel.PRIVATE)
-public class Visit {
+public class DailyVisitStatistics {
 
     LocalDate date;
-    Ip ip;
+
+    Long numberOfVisits;
 }

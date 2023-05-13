@@ -1,4 +1,4 @@
-package pl.maciejbadziak.visitorsbackend.visitarchive.adapter.in.rest;
+package pl.maciejbadziak.visitorsbackend.visit.adapter.in.rest;
 
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
@@ -6,9 +6,9 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import pl.maciejbadziak.visitorsbackend.visitarchive.adapter.in.rest.resources.VisitResource;
-import pl.maciejbadziak.visitorsbackend.visitarchive.domain.Visit;
-import pl.maciejbadziak.visitorsbackend.visitarchive.usecase.SaveVisitUseCase;
+import pl.maciejbadziak.visitorsbackend.visit.adapter.in.rest.resources.VisitResource;
+import pl.maciejbadziak.visitorsbackend.visit.domain.Visit;
+import pl.maciejbadziak.visitorsbackend.visit.usecase.SaveVisitUseCase;
 
 import static org.springframework.http.MediaType.APPLICATION_JSON_VALUE;
 

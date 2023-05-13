@@ -1,9 +1,9 @@
-package pl.maciejbadziak.visitorsbackend.visitarchive.usecase;
+package pl.maciejbadziak.visitorsbackend.visit.usecase;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Component;
-import pl.maciejbadziak.visitorsbackend.visitarchive.domain.Visit;
-import pl.maciejbadziak.visitorsbackend.visitarchive.port.SaveVisitPort;
+import pl.maciejbadziak.visitorsbackend.visit.domain.Visit;
+import pl.maciejbadziak.visitorsbackend.visit.port.SaveVisitPort;
 
 @Component
 @RequiredArgsConstructor

@@ -1,4 +1,4 @@
-package pl.maciejbadziak.visitorsbackend.visitarchive.adapter.in.rest.resources;
+package pl.maciejbadziak.visitorsbackend.visit.adapter.in.rest.resources;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import jakarta.validation.constraints.NotNull;
@@ -16,10 +16,11 @@ import static com.fasterxml.jackson.annotation.JsonInclude.Include.NON_EMPTY;
 @Builder
 @EqualsAndHashCode
 @JsonInclude(NON_EMPTY)
-public class VisitResource {
+public class VisitStatisticsResource {
 
     @NotNull
     private final LocalDate date;
+
     @NotNull
-    private final String ip;
+    private final Long numberOfVisits;
 }

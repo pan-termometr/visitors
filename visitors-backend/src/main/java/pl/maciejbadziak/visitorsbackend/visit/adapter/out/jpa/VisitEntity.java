@@ -1,4 +1,4 @@
-package pl.maciejbadziak.visitorsbackend.visitarchive.adapter.out.jpa;
+package pl.maciejbadziak.visitorsbackend.visit.adapter.out.jpa;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;

@@ -1,4 +1,4 @@
-package pl.maciejbadziak.visitorsbackend.visitarchive.adapter.out.jpa;
+package pl.maciejbadziak.visitorsbackend.visit.adapter.out.jpa;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
