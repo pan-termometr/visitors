@@ -1,0 +1,18 @@
+<div class="container">
+    <table>
+        <thead>
+            <tr>
+                <th>Date</th>
+                <th>Visits</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let dailyVisit of dailyVisits">
+                <td>{{dailyVisit.date}}</td>
+                <td>{{dailyVisit.count}}</td>
+            </tr>
+        </tbody>
+    </table>
+    
+    <button type="button" class="btn btn-primary" (click)="goBack()">Back</button>
+</div>

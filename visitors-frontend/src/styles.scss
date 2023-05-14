@@ -1,1 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
+.container {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    margin-top: 5px;
+}
+
+table {
+    margin-top: 5px;
+    margin-bottom: 10px;
+}

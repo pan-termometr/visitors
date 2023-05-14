@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { concatMap, switchMap, take, tap } from 'rxjs';
+import { Router } from '@angular/router';
+import { switchMap } from 'rxjs';
 import { Ip } from 'src/app/models/ip';
 import { IpApiService } from 'src/app/services/ip-api.service';
 import { VisitService } from 'src/app/services/visit.service';
@@ -14,7 +15,7 @@ export class MainComponent implements OnInit{
   ip?: Ip;
   currentDate: string;
 
-  constructor(private ipService: IpApiService, private visitService: VisitService) {
+  constructor(private ipService: IpApiService, private visitService: VisitService, private router: Router) {
     this.currentDate = new Date().toISOString().slice(0, 10);
    }
 
@@ -26,6 +27,10 @@ export class MainComponent implements OnInit{
     })
     ).subscribe(() => {
       console.log('Visit successfully saved in db');
-    })
+    });
+  };
+
+  redirectToStatistics() {
+    this.router.navigate(['/statistics']);
   }
 }
