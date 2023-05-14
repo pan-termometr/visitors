@@ -1,6 +1,5 @@
 package pl.maciejbadziak.visitorsbackend.visit.adapter.in.rest;
 
-import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;

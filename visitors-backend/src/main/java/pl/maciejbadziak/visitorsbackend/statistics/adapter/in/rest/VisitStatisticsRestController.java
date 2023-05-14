@@ -12,6 +12,7 @@ import static org.springframework.http.MediaType.APPLICATION_JSON_VALUE;
 @RestController
 @RequiredArgsConstructor
 @RequestMapping("/statistics")
+@CrossOrigin(origins = "http://localhost:4200")
 public class VisitStatisticsRestController {
 
     private final RetrieveVisitStatisticsUseCase retrieveVisitStatisticsUseCase;

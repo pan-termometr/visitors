@@ -2,6 +2,8 @@ package pl.maciejbadziak.visitorsbackend.visit.adapter.in.rest;
 
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
+
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -15,6 +17,7 @@ import static org.springframework.http.MediaType.APPLICATION_JSON_VALUE;
 @RestController
 @RequiredArgsConstructor
 @RequestMapping("/visits")
+@CrossOrigin(origins = "http://localhost:4200")
 public class VisitRestController {
 
     private final SaveVisitUseCase saveVisitUseCase;

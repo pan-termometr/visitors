@@ -1,0 +1,21 @@
+<div class="container">
+<table>
+    <thead>
+        <tr>
+            <th colspan="2">Your visit details:</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngIf="ip">
+            <td>Your IP address:</td>
+            <td>{{ ip.ip }}</td>
+        </tr>
+        <tr>
+            <td>Current date:</td>
+            <td>{{ currentDate }}</td>
+        </tr>
+    </tbody>
+</table>
+
+<button type="button" class="btn btn-primary">Statistics</button>
+</div>

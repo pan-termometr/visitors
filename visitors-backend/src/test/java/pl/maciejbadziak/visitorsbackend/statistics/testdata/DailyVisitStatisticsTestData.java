@@ -2,8 +2,6 @@ package pl.maciejbadziak.visitorsbackend.statistics.testdata;
 
 import pl.maciejbadziak.visitorsbackend.statistics.domain.DailyVisitStatistics;
 
-import java.time.LocalDate;
-
 import static java.time.LocalDate.of;
 
 public class DailyVisitStatisticsTestData {
