@@ -9,13 +9,13 @@ import java.util.List;
 @Component
 public class VisitOutAssembler {
 
-    public List<Visit> assembleVisits(final List<VisitEntity> visitEntities) {
+    public List<Visit> assemble(final List<VisitEntity> visitEntities) {
         return visitEntities.stream()
-                .map(this::assembleVisit)
+                .map(this::assemble)
                 .toList();
     }
 
-    public Visit assembleVisit(final VisitEntity visitEntity) {
+    public Visit assemble(final VisitEntity visitEntity) {
         return Visit.builder()
                 .date(visitEntity.getDate())
                 .ip(Ip.of(visitEntity.getIp()))

@@ -4,6 +4,8 @@ import org.springframework.stereotype.Component;
 import pl.maciejbadziak.visitorsbackend.visit.adapter.in.rest.resource.VisitResource;
 import pl.maciejbadziak.visitorsbackend.visit.domain.Visit;
 
+import static java.lang.String.valueOf;
+
 @Component
 public class VisitResourceAssembler {
 
@@ -12,7 +14,7 @@ public class VisitResourceAssembler {
             return null;
         }
         return VisitResource.builder()
-                .date(visit.getDate())
+                .date(visit.getDate().toString())
                 .ip(visit.getIp().getValue())
                 .build();
     }

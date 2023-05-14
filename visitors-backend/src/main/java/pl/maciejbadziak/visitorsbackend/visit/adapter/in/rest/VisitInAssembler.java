@@ -5,12 +5,14 @@ import pl.maciejbadziak.visitorsbackend.visit.adapter.in.rest.resource.VisitReso
 import pl.maciejbadziak.visitorsbackend.visit.domain.Ip;
 import pl.maciejbadziak.visitorsbackend.visit.domain.Visit;
 
+import static java.time.LocalDate.parse;
+
 @Component
 public class VisitInAssembler {
 
     public Visit assemble(final VisitResource visitResource) {
         return Visit.builder()
-                .date(visitResource.getDate())
+                .date(parse(visitResource.getDate()))
                 .ip(Ip.of(visitResource.getIp()))
                 .build();
     }

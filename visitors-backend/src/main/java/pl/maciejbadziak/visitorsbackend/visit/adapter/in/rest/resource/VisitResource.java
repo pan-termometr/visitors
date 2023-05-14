@@ -7,8 +7,6 @@ import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.Setter;
 
-import java.time.LocalDate;
-
 import static com.fasterxml.jackson.annotation.JsonInclude.Include.NON_EMPTY;
 
 @Getter
@@ -19,7 +17,7 @@ import static com.fasterxml.jackson.annotation.JsonInclude.Include.NON_EMPTY;
 public class VisitResource {
 
     @NotNull
-    private final LocalDate date;
+    private final String date;
 
     @NotNull
     private final String ip;

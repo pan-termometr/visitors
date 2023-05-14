@@ -21,11 +21,11 @@ public class VisitJpaAdapter implements SaveVisitPort, RetrieveAllVisitsPort {
     @Override
     public Visit save(Visit visit) {
         final VisitEntity entity = entityAssembler.assemble(visit);
-        return assembler.assembleVisit(repository.save(entity));
+        return assembler.assemble(repository.save(entity));
     }
 
     @Override
     public List<Visit> retrieve() {
-        return assembler.assembleVisits(repository.findAll());
+        return assembler.assemble(repository.findAll());
     }
 }

@@ -11,7 +11,7 @@ import static org.springframework.http.MediaType.APPLICATION_JSON_VALUE;
 
 @RestController
 @RequiredArgsConstructor
-@RequestMapping("/visits")
+@RequestMapping("/statistics")
 public class VisitStatisticsRestController {
 
     private final RetrieveVisitStatisticsUseCase retrieveVisitStatisticsUseCase;
@@ -19,9 +19,8 @@ public class VisitStatisticsRestController {
     private final VisitStatisticsResourceAssembler resourceAssembler;
 
     @GetMapping(
-            path = "/statistics",
             produces = APPLICATION_JSON_VALUE)
     public List<VisitStatisticsResource> getVisitStatistics() {
-        return resourceAssembler.assembleVisitResources(retrieveVisitStatisticsUseCase.retrieve());
+        return resourceAssembler.assemble(retrieveVisitStatisticsUseCase.retrieve());
     }
 }

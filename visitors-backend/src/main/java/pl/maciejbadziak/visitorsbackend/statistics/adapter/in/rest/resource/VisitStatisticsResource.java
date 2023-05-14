@@ -7,8 +7,6 @@ import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.Setter;
 
-import java.time.LocalDate;
-
 import static com.fasterxml.jackson.annotation.JsonInclude.Include.NON_EMPTY;
 
 @Getter
@@ -19,8 +17,8 @@ import static com.fasterxml.jackson.annotation.JsonInclude.Include.NON_EMPTY;
 public class VisitStatisticsResource {
 
     @NotNull
-    private final LocalDate date;
+    private final String date;
 
     @NotNull
-    private final Long numberOfVisits;
+    private final Long count;
 }
